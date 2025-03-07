@@ -1,0 +1,33 @@
+//
+//  Info.plist
+//  search
+//
+//  Created by Arielle Craigfeld on 3/4/25.
+//
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- BASIC METADATA -->
+  <key>CFBundleIdentifier</key>
+  <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+  <key>CFBundleName</key>
+  <string>$(PRODUCT_NAME)</string>
+
+  <!-- TIKTOK INTEGRATION -->
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+<key>TikTokClientKey</key>
+<string>$(TIKTOK_CLIENT_KEY)</string>
+<key>TikTokClientSecret</key>
+<string>$(TIKTOK_CLIENT_SECRET)</string>
+<key>TikTokRedirectURI</key>
+<string>$(TIKTOK_REDIRECT_URI)</string>
+      </array>
+    </dict>
+  </array>
+</dict>
+</plist>

@@ -1,17 +1,15 @@
-//
-//  searchApp.swift
-//  search
-//
-//  Created by Arielle Craigfeld on 1/24/25.
-//
-
 import SwiftUI
+import Firebase
 
 @main
-struct searchApp: App {
+struct YourApp: App {
+    init() {
+        FirebaseApp.configure() // Configure Firebase here
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignUpView() // Your initial view
         }
     }
 }
